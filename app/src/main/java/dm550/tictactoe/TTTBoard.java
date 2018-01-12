@@ -75,14 +75,14 @@ public class TTTBoard {
                 if (this.checkSequence(cord, 1,0) != 0){
                     return this.checkSequence(cord, 1,0);
                 }
+                if (this.checkSequence(cord, 0,1) != 0){
+                    return this.checkSequence(cord, 0,1);
+                }
                 if (this.checkSequence(cord, 1,1) != 0){
-                    return this.checkSequence(cord, 1,0);
+                    return this.checkSequence(cord, 1,1);
                 }
-                if (this.checkSequence(cord,0 ,1) != 0){
-                    return this.checkSequence(cord, 1,0);
-                }
-                if (this.checkSequence(cord, -1,-1) != 0){
-                    return this.checkSequence(cord, 1,0);
+                if (this.checkSequence(cord, 1,-1) != 0){
+                    return this.checkSequence(cord, 1,-1);
                 }
             }
         }
